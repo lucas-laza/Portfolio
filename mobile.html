@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Laza Lucas</title>
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_ujwMOUImBRBc4pOrlltQK");
+})();
+</script>
+<script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            // this.contact_number.value = Math.random() * 100000 | 0;
+            // these IDs from the previous steps
+            emailjs.send("service_d7ehk66","template_qw6xdim",{
+            from_name: document.querySelector("#email").value,
+            to_name: "Lucas",
+            object: document.querySelector("#sujet").value,
+            message: document.querySelector("#message").value,
+            reply_to: document.querySelector("#email").value,
+           
+            })
+                .then(function() {
+                    console.log('SUCCESS!');
+                    document.querySelector("form h3").style.opacity = "1";
+                    setInterval(() => {
+                        document.querySelector("form h3").style.opacity = "0";
+                    }, 8500);
+
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+        });
+    }
+</script>
+</head>
+<div class="noOverflow">
+    <body>
+    
+        <div class="mobile">
+    
+    
+            <div class="Mhome">
+    
+                <div class="blobMobile"></div>
+    
+                <div class="wrapper">
+                    <div class="titres">
+                        <h1>Laza Lucas</h1>
+                        <h2>Développeur full-stack junior</h2>
+                    </div>
+                    <div class="photoZ">
+                        <div class="photo"></div>
+                    </div>
+                    <div class="liens">
+                        <div class="link cv"><img src="images/logo_cv.svg" alt=""></div>
+                        <div class="link LI"><a href="https://www.linkedin.com/in/lucas-laza-3b851b1a3/"><img src="images/logo_linkedIn.svg" alt=""></a></div>
+                        <div class="link git"><a href="https://github.com/lucas-laza"><img src="images/logo_git.svg" alt=""></a></div>
+                    </div>
+                    <div class="video">
+                        <a href="https://www.youtube.com/watch?v=kNuzHbqWz4s">Vers mon CV vidéo</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="Mabout">
+                <div class="t">
+                    <h1>À propos de moi</h1>
+                </div>
+                <div class="visible">
+                    <div class="container">
+                        <div class="para">
+                            <h2>Profil</h2>
+                            <p>Je suis étudiant en deuxième année du DUT Métiers du Multimédia et de l’Internet. <br>
+                                C’est avec beaucoup de rigueur et de créativité que j'affectionne développer des sites web et autres mini-jeux. <br>
+                                Je suis passionné par le développement et j’aspire à devenir développeur full-stack.</p>
+                        </div>
+                        <div class="para">
+                            <h2>Formation</h2>
+                            <p>La formation que je suis actuellement est en 2 ans. Le DUT Métiers du Multimédia et de l’Internet, a l’avantage d’être très polyvalent. Nous sommes formés dans le domaine du développement web, qu’il soit front-end ou back-end, mais également dans les domaines de la communication, du design et du multimédia.<br> Les élèves du DUT MMI savent développer dans une myriade de langages de programmation et savent utiliser un grand nombre de logiciels de création.</p>
+    
+                        </div>
+                        <div class="para">
+                            <h2>Skills</h2>
+                            <p><h5>Développement:</h5>
+                                <ul>
+                                  <li>HTML, CSS</li>
+                                  <li>Javascript (+ Connaissances en React)</li>
+                                  <li>PHP,SQL</li>
+                                  <li>Programmation orientée objet</li>
+                                  <li>Modélisation de bases de données</li>
+                                </ul>
+                                
+                                <h5>Communication:</h5>
+                                <ul>
+                                  <li>Photoshop</li>
+                                  <li>Figma (UI/UX design)</li>
+                                  <li>Premiere Pro / After Effects</li>
+                                  <li>Illustrator</li>
+                                </ul></p>
+    
+                        </div>
+                        <div class="para">
+                            <h2>Soft skills</h2>
+                            <p><ul>
+                                <li>Rigueur</li>
+                                <li>Esprit d’équipe</li>
+                                <li>Polyvalence</li>
+                                <li>Ouverture d’esprit</li>
+                                <li>Empathie</li>
+                                <li>Esprit d’analyse</li>
+                                <li>Créativité</li>
+                                <li>Patience</li>
+                              </ul></p>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="Mprojets">
+                <div class="t">
+                    <h1>Mes projets</h1>
+                </div>
+
+                <div class="liste">
+
+                    <div class="projet openP" data-id="1">
+                        <div class="image" data-id="1"></div>
+                        <div class="texte" data-id="1">
+                            <h3 data-id="1">Ogrinami</h3>
+                            <h4 data-id="1">Tags: #jeuxJS #PHP #MobileFirst #React #d3.js
+                            </h4>
+                            <h5 data-id="1">Voir</h5>
+                        </div>
+                    </div>
+
+                    <div class="projet openP"  data-id="2">
+                        <div class="image" data-id="2"></div>
+                        <div class="texte" data-id="2">
+                            <h3 data-id="2">MMI (job) Dating Simulator</h3>
+                            <h4 data-id="2">Tags: #PHP #Dialogues #BaseDeDonnees #Jeu #Jquery
+                            </h4>
+                            <h5 data-id="2">Voir</h5>
+                        </div>
+                    </div>
+
+                    <div class="projet openP" data-id="3">
+                        <div class="image" data-id="3"></div>
+                        <div class="texte" data-id="3">
+                            <h3 data-id="3">#BA0BAB, Projet Hex#words</h3>
+                            <h4 data-id="3">Tags: #CSS #Responsive #MobileFirst #CSS_Grid</h4>
+                            <h5 data-id="3">Voir</h5>
+                        </div>
+                    </div>
+
+                    <div class="projet openP" data-id="4">
+                        <div class="image" data-id="4"></div>
+                        <div class="texte" data-id="4">
+                            <h3 data-id="4">Mini-jeux</h3>
+                            <h4 data-id="4">Tags: #Javasctipt #jeux #d3js #P.O.O #PHP
+                            </h4>
+                            <h5 data-id="4">Voir</h5>
+                        </div>
+                    </div>
+
+                    <div class="projet openP" data-id="5">
+                        <div class="image"  data-id="5"></div>
+                        <div class="texte " data-id="5">
+                            <h3   data-id="5">Blog du rhum</h3>
+                            <h4  data-id="5">Tags: #PHP #Blog #Ajax #BDD #back</h4>
+                            <h5  data-id="5">Voir</h5>
+                        </div>
+                    </div>
+
+                    <div class="projet openP" data-id="6">
+                        <div class="image" data-id="6"></div>
+                        <div class="texte" data-id="6">
+                            <h3 data-id="6">Vaux tourisme</h3>
+                            <h4 data-id="6">Tags: #Photoshop #UI/UX #Figma #mockups</h4>
+                            <h5 data-id="6">Voir</h5>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="modaleProjet">
+                <div class="haut">
+                    <div class="goBack"></div>
+                    <div class="lien"><a href="">VISITER LE SITE</a></div>
+                </div>
+                <div class="titres">
+                    <h2></h2>
+                    <h3></h3>
+                    <h4></h4>
+                </div>
+                <div class="texte">
+                    <p></p>
+                </div>
+                
+                <div class="photos"></div>
+            </div>
+    
+            <div class="Mcontact">
+
+
+                <h1>Contactez-moi !</h1>
+            
+            
+                <form id="contact-form"id="contact-form" action="">
+                    
+                    <input type="email" name="email" id="email">
+                    <label  for="email">Adresse mail</label>
+
+                
+                    <input type="text" name="sujet" id="sujet">
+                    <label for="sujet">Sujet</label>
+
+                    
+                    <textarea name="message" id="message" cols="20" rows="6" ></textarea>
+                    <label for="message">Message</label>
+
+                    <input type="submit" value="ENVOYER">
+
+                    <h3>Envoyé !</h3>
+                </form>
+
+                <div class="mail">
+                    <div class="copie">Copié !</div>
+                    <div class="copyMail">
+                        <h2 >laza.lucas15@gmail.com</h2>
+                        <img src="images/clip.svg" alt="">
+                    </div>
+                </div>
+
+                <input type="text" value="laza.lucas15@gmail.com" class="mailHidden" name="mailHidden">
+            </div>
+    
+
+
+    
+        </div>
+    
+        <script src="mobilescript.js"></script>
+    </body>
+</div>
+
+
+
+</html>
