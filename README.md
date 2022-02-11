@@ -1,4 +1,4 @@
 # Portfolio
-Portfolio 2022.
+Portfolio 2022 from scratch.
 
 => https://www.lazalucas.fr
