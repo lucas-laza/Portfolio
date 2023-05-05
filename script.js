@@ -704,17 +704,20 @@ function changeAbout(){
                 `
             } else if (id == 2){
                 document.querySelector(".about .wrapper .aboutme .Atitre h2").innerHTML = "Formation";
-                document.querySelector(".about .wrapper .aboutme .Atext p").innerHTML = "La formation que je suis actuellement est en 2 ans. Le DUT Métiers du Multimédia et de l’Internet, a l’avantage d’être très polyvalent. Nous sommes formés dans le domaine du développement web, qu’il soit front-end ou back-end, mais également dans les domaines de la communication, du design et du multimédia.<br> Les élèves du DUT MMI savent développer dans une myriade de langages de programmation et savent utiliser un grand nombre de logiciels de création."
+                document.querySelector(".about .wrapper .aboutme .Atext p").innerHTML = `
+                <span> <strong>2022 - 2023  </strong> Formation en alternance au métier de responsable développeur web à l'ESGI Lille. Développement sur frameworks JS et PHP</span>
+                <span> <strong>2020 - 2022  </strong> Le DUT Métiers du Multimédia et de l’Internet, a l’avantage d’être très polyvalent. Nous sommes formés dans le domaine du développement web, qu’il soit front-end ou back-end, mais également dans les domaines de la communication, du design et du multimédia.<br> Les élèves du DUT MMI savent développer dans une myriade de langages de programmation et savent utiliser un grand nombre de logiciels de création.</span>
+                `
             }
             else if (id == 3){
                 document.querySelector(".about .wrapper .aboutme .Atitre h2").innerHTML = "Skills";
                 document.querySelector(".about .wrapper .aboutme .Atext p").innerHTML = `<h5>Développement:</h5>
                 <ul>
                   <li>HTML, CSS</li>
-                  <li>Javascript (+ Connaissances en React)</li>
-                  <li>PHP,SQL</li>
+                  <li>Javascript (React, Express)</li>
+                  <li>PHP (Laravel) </li>
                   <li>Programmation orientée objet</li>
-                  <li>Modélisation de bases de données</li>
+                  <li>Bases de données (SQL, NoSQL)</li>
                 </ul>
                 
                 <h5>Communication:</h5>
